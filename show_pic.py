@@ -19,6 +19,7 @@ output = {
 
 (X,Y),(x,y) = cifar10.load_data()
 img = cv2.resize(X[int(sys.argv[1])],(256,256))
+cv2.imshow("origin",X[int(sys.argv[1])])
 cv2.imshow(output.get(int(Y[int(sys.argv[1])])),img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
